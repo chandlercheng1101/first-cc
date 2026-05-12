@@ -1,0 +1,26 @@
+{
+  "name": "pomodoro-app",
+  "version": "1.0.0",
+  "description": "A simple Pomodoro timer desktop application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.pomodoro.app",
+    "productName": "番茄钟",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable"
+    }
+  }
+}

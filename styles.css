@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #1a1a2e;
+  color: #fff;
+  user-select: none;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 14px;
+  color: #888;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+.mode-label {
+  font-size: 14px;
+  color: #e94560;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.timer-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.progress-ring {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.progress-ring-bg {
+  fill: none;
+  stroke: #2a2a4a;
+  stroke-width: 8;
+}
+
+.progress-ring-progress {
+  fill: none;
+  stroke: #e94560;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 565.48;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.time-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #e94560;
+  color: #fff;
+  min-width: 100px;
+}
+
+.btn-primary:hover {
+  background: #d63850;
+}
+
+.btn-primary.running {
+  background: #f39c12;
+}
+
+.btn-secondary {
+  background: #2a2a4a;
+  color: #888;
+}
+
+.btn-secondary:hover {
+  background: #3a3a5a;
+  color: #fff;
+}
+
+.pomodoro-count {
+  color: #666;
+  font-size: 14px;
+}
+
+#pomodoroCount {
+  color: #e94560;
+  margin: 0 5px;
+}
